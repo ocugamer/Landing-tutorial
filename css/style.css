@@ -6,14 +6,21 @@ body {
     /* background-image: linear-gradient(to bottom, #ff6ac1, #282181); */
 }
 
-h1{
-    margin:0 ;
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
     padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     align-items: center;
     background-color: white;
     box-shadow:
@@ -30,6 +37,7 @@ h1{
     color: #fff;
     font-size: 14px;
     font-weight: 600;
+    cursor:pointer;
     background-color: #EF008D;
 
 }
@@ -56,7 +64,7 @@ h1{
 }
 
 
-.hero{
+.hero {
     position: relative;
     background-image: url('https://ocugamer.github.io/Landing-tutorial/assets/slider.jpg');
     background-position: center left;
@@ -68,17 +76,18 @@ h1{
     background-size: cover;
 }
 
-.content{
+.content {
     position: relative;
     z-index: 2;
     color: white;
 }
 
-.content h1{
+.content h1 {
     font-size: 3rem;
     font-weight: 800;
 }
-.content p{
+
+.content p {
     text-align: center;
     font-size: 14px;
 
@@ -89,19 +98,77 @@ h1{
     inset: 0;
     background-color: #26272777;
 }
-.footer{
-   padding-top:2rem;
-   width: 100%;
+
+.footer {
+    padding-top: 2rem;
+    width: 100%;
 }
-.container-footer{
+
+.container-footer {
     display: grid;
     grid-template-columns: auto auto;
 }
-.container-footer img{
+
+.container-footer img {
     width: 100px;
     height: auto;
     place-items: center;
 }
+
+.main {
+    display: flex;
+    padding: 3rem 0 3rem 0;
+
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 20px 0 20px 0;
+}
+
+.about h2 {
+    color: #EC058C;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about p {
+    color: #6666;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 20px 0;
+}
+
+.row1 p {
+    color: #6666;
+    line-height: 1.5;
+    font-size: 20px;
+
+}
+
+.row1 button {
+    padding: 1rem 2rem 1rem 2rem;
+    color: white;
+    background-color: #14264E;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    margin: 10px;
+
+}
+
 /* h2 {
    
 }
