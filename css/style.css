@@ -58,7 +58,7 @@ h1{
 
 .hero{
     position: relative;
-    background-image: url('../assets/slider.jpg');
+    background-image: url('https://ocugamer.github.io/Landing-tutorial/assets/slider.jpg');
     background-position: center left;
     background-repeat: no-repeat;
     height: 800px;
