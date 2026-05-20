@@ -1,0 +1,133 @@
+body {
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-image: linear-gradient(to bottom, #ff6ac1, #282181); */
+}
+
+h1{
+    margin:0 ;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: white;
+    box-shadow:
+        -1px 4px 6px -1px rgba(0, 0, 0, 0.11);
+
+
+}
+
+.header button {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #EF008D;
+
+}
+
+.header img {
+    width: 90px;
+    height: auto;
+}
+
+.container-item {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.container-item a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #15274F;
+}
+
+
+.hero{
+    position: relative;
+    background-image: url('/assets/slider.jpg');
+    background-position: center left;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.content h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.content p{
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #26272777;
+}
+.footer{
+   padding-top:2rem;
+   width: 100%;
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.container-footer img{
+    width: 100px;
+    height: auto;
+    place-items: center;
+}
+/* h2 {
+   
+}
+
+.p_white {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-style: groove;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #ffa4d9, #423e79);
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: tomato;
+    text-decoration: solid;
+}
+
+img {
+    width: 425px;
+    height: auto;
+}
